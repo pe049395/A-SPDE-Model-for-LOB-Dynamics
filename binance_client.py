@@ -15,7 +15,6 @@ def handle_trade_error(action, error):
     logging.error(error_text)
 
 def margin_send_market_buy_order(symbol, quantity):
-
     params = {
         "symbol": symbol,
         "side": "BUY",
@@ -29,7 +28,6 @@ def margin_send_market_buy_order(symbol, quantity):
         logging.info(response)
     except ClientError as error:
         handle_trade_error("Market Buy", error)
-
 
 def margin_send_market_sell_order(symbol, quantity):
     params = {
