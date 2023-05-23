@@ -1,5 +1,4 @@
 import json
-import websocket
 import math
 import numpy as np
 
