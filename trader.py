@@ -22,7 +22,7 @@ class Trader:
         self.in_long_position = False
         self.in_short_position = False
 
-    def message_handler(self, message):
+    def handle_message(self, message):
         message = json.loads(message)
 
         # z0값 저장하기
