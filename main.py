@@ -34,7 +34,7 @@ class BinanceWebsocketConnector(Trader):
         print("WebSocket connection closed")
 
     def on_message(self, ws, message):
-        self.message_handler(message)
+        self.handle_message(message)
 
 def main():
     symbol = "BTCUSDT"
